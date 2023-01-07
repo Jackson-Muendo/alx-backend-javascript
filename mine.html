@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html> 
+
+<head>
+
+<meta charset=utf-8 />
+
+<title>JavaScript program to calculate multiplication and division of two numbers </title>
+
+<style type="text/css">
+
+body {margin: 30px;}
+
+</style> 
+
+<script >
+
+function bet(x){
+
+  x = document.getElementById("firstNumber").value;
+
+  var y = Math.floor(Math.random()*100);
+
+  if(x == y) {
+
+    document.getElementById("result").innerHTML = "CONGRATULATIONS YOU WON";
+
+  }
+
+  else{
+
+    document.getElementById("result").innerHTML = "SORRY YOU LOST TO JACKSON THE BILLIONAIRE THE NUMBER IS " + " "+ y;
+
+  }
+
+}
+
+function multiplyBy()
+
+{
+
+        num1 = document.getElementById("firstNumber").value;
+
+        num2 = document.getElementById("secondNumber").value;
+
+        document.getElementById("result").innerHTML = num1 * num2;
+
+}
+
+
+
+function divideBy() 
+
+{ 
+
+        num1 = document.getElementById("firstNumber").value;
+
+        num2 = document.getElementById("secondNumber").value;
+
+document.getElementById("result").innerHTML = num1 / num2;
+
+}
+
+ </script>
+
+</head>
+
+<body><p> Guess a Number To Win Cash! All The Best Budy</p>
+
+<form>
+
+Your Guess : <input type="text" id="firstNumber" required=""/><br>
+
+<!--2nd Number: <input type="text" id="secondNumber" /><br> -->
+
+<input type="button" onClick="bet()" Value="Submit" />
+
+<!--<input type="button" onClick="divideBy()" Value="Divide" />-->
+
+</form>
+
+<!--<p>The Result is : --><br>
+
+<span id = "result"></span>
+
+</p>
+
+</body>
+
+</html>
+
